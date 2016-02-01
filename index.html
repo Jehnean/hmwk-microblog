@@ -1,80 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset = "UTF-8">
-	<title>Simple Blog by Jehnean</title>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Improved Micro Blog</title>
 
-	<!-- CSS Links -->
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Bootstrap CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="css"  rel="stylesheet">
 
-	<!-- Font Links -->
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel="stylesheet" type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- Custom CSS --> 
+		<link rel="stylesheet" type="css" href="css/style.css">
 
-    <!-- JS Links -->
-    <script src="js/script.js"></script>
+		<!-- Custom Fonts -->
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-</head>
-<body>
-	<!-- Page Header -->
-    <header class="intro-header" style="background-image: url('img/hero-bg.jpeg')">
-        <div class="container">
-            <div class="row">
-                <div class="site-heading">
-                    <h1>Micro Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">Share your micro thought too!</span>
-                    <div class="form-container">
-	                    <form>
-	                    	<input type="text" id="inputField" name="yourPost" placeholder="Your thoughts">
-	                    	<button type="submit" id="share-btn">Share</button>
-	                    </form>
+		<!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!-- My JavaScript --> 
+        <script src="js/script.js"></script>
+        
+	</head>
+
+	<body>
+	    <!-- Page Header -->
+	    <header class="intro-header" style="background-image: url('img/hero-bg.jpeg')">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	                    <div class="site-heading">
+                    		<h1>Micro Blog</h1>
+                    		<hr class="small">
+                    		<span class="subheading">Share your micro thought too!</span>
+	                	</div>
+                	</div>
+	            </div>
+	        </div>
+	    </header>
+
+	    <!-- Main Content -->
+	    <div class="container">
+	        <div class="row">
+            	<!-- Posts --> 
+            	<div class="blog-poster">
+					<div class="blog-field">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+							<form class="blog-submit-form">
+								<input type="text" class="input-blog-post" name="blog-post" placeholder="Post Micro Blog Item" />
+								<button class= "btn" type="submit">Submit</button>
+							</form>
+						</div>
+						<div class="col-md-12"><hr></div>
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+							<div class="blog-item-list">
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+	            </div>
+	        </div>
+	    </div>
+
+	    <hr>
+
+	    <!-- Footer -->
+	    <footer>
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	                    <ul class="list-inline text-center">
+	                        <li>
+	                            <a href="#">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                    <p class="copyright text-muted">Copyright &copy; 2016</p>
 	                </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="post-preview">
-                <a href="post.html">
-                    <h2 class="post-title">
-                        Lorem ipsum dolor sit amet.
-                    </h2>
-                    <h3 class="post-subtitle">
-                        Consectetur adipisicing elit.
-                    </h3>
-                </a>
-                <p class="post-meta">Posted by <a href="#">The User</a> on January 26, 2016</p>
-            </div>
-            <hr>
-            <ul class ="posts">
-                <li>
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title" script=".hide()">
-                                 Sit labore aliquid sunt.
-                            </h2>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#">THE User</a> on January 25, 2016</p>
-                    </div>
-                    <hr>
-                </li>
-            </ul>
-
-            <!-- Pager -->
-            <ul class="pager">
-                <li class="next">
-                    <a href="#">Older Posts &rarr;</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <hr>
-</body>
+	            </div>
+	        </div>
+	    </footer>
+	</body>
 </html>
-

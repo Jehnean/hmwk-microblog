@@ -1,9 +1,46 @@
 body {
-	margin: 0;
 	font-family: Lora,'Times New Roman',serif;
-	font-size: 20px;
+
     color: #404040;
     line-height: 1.5; 
+}
+
+h1 {
+	font-size: 5em;
+	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2 {
+	margin-bottom: 5%;  
+	font-size: 1.5em; 
+	font-weight: 800;
+
+
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.input-blog-post {
+	padding: 1.1em; 
+	color: #333;
+	width: 80%; 
+
+}
+
+hr.small {
+    color: #fff;
+    max-width: 100px;
+    margin: 15px auto;
+    border: 0;
+    border-top: 4px solid #fff;
 }
 
 .intro-header {
@@ -21,41 +58,8 @@ body {
 	min-height: 500px; 
 }
 
-/* I want to use this, but I am not sure how to place it to work properly 
-.overlay {
-	position: absolute;
-  	top: 0;
- 	left: 0;
-  	width: 100%;
-  	height: 100%;
-  	z-index: 10;
-  	background-color: rgba(0,0,0,0.5); 
-}
-*/ 
-
-.container {
-	padding: 0 15px;
-	margin-right: auto; 
-	margin-left: auto;
-	max-width: 80%;
-}
-
-.row {
-	margin-right: -15px; 
-	margin-left: -15px; 
-}
-
 .site-heading {
-	padding: 150px 0;
-}
-
-h1 {
-	font-size: 2em;
-	margin-top: 0; 
-	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-weight: 800;
-    text-align: center;
-
+	padding: 20% 0;
 }
 
 .post-preview > a {
@@ -71,32 +75,13 @@ h1 {
   color: #0085a1;
 }
 
-h2 {
-	margin-bottom: .1em;  
-}
-
-h3 {
-	font-size: .75em; 
-	margin-bottom: .1em;
-	margin-top: 0px; 
-	font-weight: 300; 
-}
-
 .post-meta {
 	font-style: italic;
 	color: #333; 
 }
 
-hr.small {
-    color: #fff;
-    max-width: 100px;
-    margin: 15px auto;
-    border: 0;
-    border-top: 4px solid #fff;
-}
-
 .subheading {
-	font-size: 1em; 
+	font-size: 2em; 
 	line-height: 1.2; 
 	margin-top: 30px; 
 	display: block;
@@ -106,77 +91,74 @@ hr.small {
 
 }
 
-.row {
-	margin: 0 auto;
-	display: block;
-}
-
-.form-container {
-	padding: 15px; 
-	/* background-color: red;  */
-	display: inline-block;
-}
-
-
-input {
-	font-size: .75em; 
-	position: relative;
-	margin: 0px; 
-	padding: 17px; 
-	border: none;
-	min-width: 200px; 
-}
-
-
 /* Button Styles */
-#share-btn {
-	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-	text-transform: uppercase;
-	font-weight: 800; 
-	letter-spacing: 1px; 
-	display: inline-block;
-	padding: 6px 12px;
-	margin-bottom: 0;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 1.42857143;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-  	-ms-touch-action: manipulation;
-      touch-action: manipulation;
-  	cursor: pointer;
-  	-webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  	background-image: none;
- 	border: 1px solid transparent;
-  	border-radius: 0px; 
-  	padding: 15px 25px; 
-  	color: #fff;
-    background-color: purple;
-}
-#share-btn:focus,
-#share-btn:active:focus,
-#share-btn.active:focus,
-#share-btn.focus,
-#share-btn:active.focus,
-#share-btn.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-#share-btn:hover,
-#share-btn:focus,
-#share-btn.focus {
+
+.close-button {
+  border-radius: 0;
+  padding: 10px 15px;
+  margin-right: 5%; 
   color: #333;
-  text-decoration: none;
+  background-color: #f7f7f7;
+  border-color: #ccc;
+  float: left;
+
 }
-#share-btn:active,
-#share-btn.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+.btn {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 0;
+  padding: 16px 25px;
+  margin-left: 2%; 
+  color: #333;
+  background-color: #f7f7f7;
+  border-color: #ccc;
+  width: 16%;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+  color: white;
+  color: #fff;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+
+.pager {
+  margin: 20px 0 0;
+}
+.pager li > a,
+.pager li > span {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 0;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  color: white;
+  background-color: #0085a1;
+  border: 1px solid #0085a1;
+}
+
+
+footer {
+  padding: 50px 0 65px;
+}
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0;
 }
